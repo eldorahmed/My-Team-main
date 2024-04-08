@@ -238,6 +238,7 @@
   .hero__hr {
   }
   .hero__text {
+    width: 333px;
     font-size: var(--body2-text-fs);
     line-height: var(--body2-text-lh);
   }
