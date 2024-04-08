@@ -1,0 +1,29 @@
+@media (max-width: 450px) {
+  .header {
+  }
+  .container {
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+  }
+  .header__container {
+    margin-top: 4.8rem;
+    margin-bottom: 8rem;
+  }
+  .header__logo {
+  }
+  .header__navlist {
+    display: none;
+  }
+  .header__navitem {
+  }
+  .header__navlink {
+  }
+  .header__btn {
+    display: none;
+  }
+  .btn {
+  }
+  .hamburger-menu {
+    display: block;
+  }
+}

@@ -1,0 +1,32 @@
+@media (max-width: 800px) {
+  .header {
+  }
+  .container {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+  .header__container {
+    margin-top: 6.4rem;
+    margin-bottom: 11.2rem;
+  }
+
+  .main {
+  }
+  .hero {
+    background: url(../images/home-bg-2.png) bottom center no-repeat;
+  }
+  .hero__container {
+  }
+  .container {
+  }
+  .hero__title {
+  }
+  .red-text {
+  }
+  .hero__info {
+  }
+  .hero__hr {
+  }
+  .hero__text {
+  }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamburger Menu Navigation</title>
+    <style>
+      /* Your existing styles for header and navigation */
+      /* Your existing styles for header and navigation */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+        padding: 1rem;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+      }
+
+      .nav-links {
+        display: flex;
+      }
+
+      .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 1rem;
+      }
+
+      /* Styles for hamburger menu */
+      .hamburger-menu {
+        display: none; /* Hide by default on larger screens */
+        cursor: pointer;
+      }
+
+      .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 0;
+      }
+
+      .mobile-nav {
+        display: none; /* Hide by default on larger screens */
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100%;
+        background-color: #333;
+        z-index: 1000;
+        padding: 2rem;
+        transform: translateX(200%);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .mobile-nav nav {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .mobile-nav a {
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 1rem;
+      }
+
+      /* Media query for mobile devices */
+      @media screen and (max-width: 768px) {
+        .nav-links {
+          display: none; /* Hide navigation links on smaller screens */
+        }
+
+        .hamburger-menu {
+          display: block; /* Show hamburger menu icon */
+        }
+        .mobile-nav {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Your Logo</div>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </header>
+
+    <div class="mobile-nav">
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+
+    <script>
+      document
+        .querySelector(".hamburger-menu")
+        .addEventListener("click", function () {
+          document.querySelector(".mobile-nav").style.transform =
+            "translateX(0)";
+        });
+
+      document
+        .querySelector(".mobile-nav")
+        .addEventListener("click", function () {
+          this.style.transform = "translateX(200%)";
+        });
+    </script>
+  </body>
+</html>

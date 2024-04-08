@@ -4,21 +4,78 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project</title>
-    <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
   </head>
   <body>
     <!-- HEADER START -->
-    <header class="header"></header>
+    <header class="header">
+      <div class="container header__container">
+        <img
+          src="./images/logo.svg"
+          alt="header logo img"
+          class="header__logo"
+        />
+        <ul class="header__navlist">
+          <li class="header__navitem">
+            <a href="" class="header__navlink">home</a>
+          </li>
+          <li class="header__navitem">
+            <a href="" class="header__navlink">about</a>
+          </li>
+        </ul>
+        <a href="#" class="header__btn btn">contact us</a>
+        <img src="./images/icon-hamburger.svg" alt="" class="hamburger-menu" />
+      </div>
+      <div class="mobile-nav">
+        <nav>
+          <a href="#">home</a>
+          <a href="#">about</a>
+          <a href="#" class="mobile-btn header__btn btn">contact us</a>
+        </nav>
+      </div>
+    </header>
+
     <!-- HEADER END -->
 
     <!-- MAIN START -->
-    <main class="main"></main>
+    <main class="main">
+      <section class="hero">
+        <div class="hero__container container">
+          <h1 class="hero__title">
+            Find the <br />
+            best <span class="red-text">talent</span>
+          </h1>
+          <div class="hero__info">
+            <hr class="hero__hr" />
+            <p class="hero__text">
+              Finding the right people and building high performing teams can be
+              hard. Most companies aren’t tapping into the abundance of global
+              talent. We’re about to change that.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- MAIN END -->
 
     <!-- FOOTER START -->
     <footer class="footer"></footer>
+
     <!-- FOOTER END -->
+    <script>
+      document
+        .querySelector(".hamburger-menu")
+        .addEventListener("click", function () {
+          document.querySelector(".mobile-nav").style.transform =
+            "translateX(0)";
+        });
+
+      document
+        .querySelector(".mobile-nav")
+        .addEventListener("click", function () {
+          this.style.transform = "translateX(200%)";
+        });
+    </script>
   </body>
 </html>

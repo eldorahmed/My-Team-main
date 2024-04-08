@@ -1,0 +1,17 @@
+:root {
+  --primary-color: #f67e7e;
+  --main-bg-color: #014e56;
+  --secondary-bg: #012f34;
+  --footer-bg: #002629;
+  --light-green: #79c8c7;
+  --white-color: #fff;
+  --h1-large-fs: 10rem;
+  --h1-large-lh: 1;
+  --h1-small-fs: 6.4rem;
+  --h1-small-lh: 0.875;
+  --body1-text-fs: 1.8rem;
+  --body1-text-lh: 1.55;
+  --body2-text-fs: 1.5rem;
+  --body2text-lh: 1.66;
+  --main-font-family: "Livvic", sans-serif;
+}
