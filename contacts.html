@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Teamt</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>My Team| Contact</title>
+    <link rel="stylesheet" href="./css/contact.css" />
     <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
   </head>
   <body>
@@ -44,151 +44,82 @@
 
     <!-- MAIN START -->
     <main class="main">
-      <section class="hero">
-        <div class="hero__container container">
-          <h1 class="hero__title">
-            Find the <br />
-            best
-            <span class="red-text">talent</span>
-          </h1>
-          <div class="hero__info">
-            <hr class="hero__hr" />
-            <p class="hero__text">
-              Finding the right people and building high performing teams can be
-              hard. Most companies aren’t tapping into the abundance of global
-              talent. We’re about to change that.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="features">
-        <div class="features__container container">
-          <div class="features__info">
-            <hr class="red-hr" />
-            <h2 class="features__title">
-              Build & manage distributed teams like no one else.
-            </h2>
-          </div>
-          <div class="feature__items">
-            <div class="features__item">
+      <section class="contacts">
+        <div class="contacts__container container">
+          <div class="contacts__info">
+            <h2 class="contacts__title">Contact</h2>
+            <h3 class="contacts__subtitle">Ask us about</h3>
+            <div class="contacts__type">
               <img
                 src="./images/icon-person.svg"
                 alt=""
-                class="features__img"
+                class="contacts__type-img"
                 width="72"
                 height="72"
               />
-              <div class="features__item-info">
-                <h3 class="fetures__item-title red-text">
-                  Experienced Individuals
-                </h3>
-                <p class="features__item-text">
-                  Our network is made up of highly experienced professionals who
-                  are passionate about what they do.
-                </p>
-              </div>
+              <p class="contacts__type-text body1">
+                The quality of our talent network
+              </p>
             </div>
-            <div class="features__item">
+            <div class="contacts__type">
               <img
                 src="./images/icon-cog.svg"
                 alt=""
-                class="features__img"
+                class="contacts__type-img"
                 width="72"
                 height="72"
               />
-              <div class="features__item-info">
-                <h3 class="fetures__item-title red-text">Easy to Implement</h3>
-                <p class="features__item-text">
-                  Our processes have been refined over years of implementation
-                  meaning our teams always deliver.
-                </p>
-              </div>
+              <p class="contacts__type-text body1">
+                Usage & implementation of our software
+              </p>
             </div>
-            <div class="features__item">
+            <div class="contacts__type">
               <img
-                src="./images//icon-chart.svg"
+                src="./images/icon-chart.svg"
                 alt=""
-                class="features__img"
+                class="contacts__type-img"
                 width="72"
                 height="72"
               />
-              <div class="features__item-info">
-                <h3 class="fetures__item-title red-text">
-                  Enhanced Productivity
-                </h3>
-                <p class="features__item-text">
-                  Our customized platform with in-built analytics helps you
-                  manage your distributed teams.
-                </p>
-              </div>
+              <p class="contacts__type-text body1">
+                How we help drive innovation
+              </p>
             </div>
           </div>
+          <form class="contacts__form">
+            <input
+              type="text"
+              class="input-text body2"
+              placeholder="Name"
+              required
+            />
+            <input
+              type="email"
+              class="input-text body2"
+              placeholder="Email Address"
+              required
+            />
+            <input
+              type="text"
+              class="input-text body2"
+              placeholder="Company Name"
+              required
+            />
+            <input
+              type="text"
+              class="input-text body2"
+              placeholder="Title"
+              required
+            />
+            <textarea
+              class="input-text-area body2"
+              name="massage"
+              placeholder="Message"
+              id="message"
+            ></textarea>
+            <button class="contact__btn btn">submit</button>
+          </form>
         </div>
-      </section>
-      <section class="stories">
-        <div class="stories__container container">
-          <h2 class="stories__title">
-            Delivering real results for top <br />
-            companies. Some of our
-            <span class="story-green">success stories.</span>
-          </h2>
-          <div class="stories__list">
-            <div class="stories__item">
-              <p class="stories__item-text body2">
-                “The team perfectly fit the specialized skill set required. They
-                focused on the most essential features helping us launch the
-                platform eight months faster than planned.”
-              </p>
-              <h4 class="stories__item-name body1">Kady Baker</h4>
-              <p class="stories__item-job">Product Manager at Bookmark</p>
-              <img
-                class="stories__item-img"
-                src="./images/avatar-kady.jpg"
-                alt=""
-                width="62"
-                height="62"
-              />
-            </div>
-            <div class="stories__item">
-              <p class="stories__item-text body2">
-                “We needed to automate our entire onboarding process. The team
-                came in and built out the whole journey. Since going live, user
-                retention has gone through the roof!”
-              </p>
-              <h4 class="stories__item-name body1">Aiysha Reese</h4>
-              <p class="stories__item-job">Founder of Manage</p>
-              <img
-                class="stories__item-img"
-                src="./images/avatar-aiysha.jpg"
-                alt=""
-                width="62"
-                height="62"
-              />
-            </div>
-            <div class="stories__item">
-              <p class="stories__item-text body2">
-                “Amazing. Our team helped us build an app that delivered a new
-                experience for hiring a physio. The launch was an instant
-                success with 100k downloads in the first month.”
-              </p>
-              <h4 class="stories__item-name body1">Arthur Clarke</h4>
-              <p class="stories__item-job">Co-founder of MyPhysio</p>
-              <img
-                class="stories__item-img"
-                src="./images/avatar-arthur.jpg"
-                alt=""
-                width="62"
-                height="62"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="cta">
-        <cta class="cta__container container">
-          <h2 class="cta__title">Ready to get started?</h2>
-          <a href="./contacts.html" class="btn cat__btn">contact us</a>
-        </cta>
       </section>
     </main>
     <!-- MAIN END -->
