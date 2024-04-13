@@ -74,6 +74,7 @@
   padding: 1rem 3.2rem;
   background-color: var(--white-color);
   color: #004047;
+  font-weight: 600;
   &:hover {
     background-color: transparent;
     color: #fff;
